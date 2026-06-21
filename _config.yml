@@ -16,7 +16,7 @@ timezone: Asia/Kolkata
 
 title: Roshni Kasliwal # the main title
 
-tagline: Sr. AI Engineer # it will display as the subtitle
+tagline: Thoughts on AI engineering, AI in SDLC # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   AI Blog. Thoughts on AI engineering, LLM agents, and the craft of building intelligent systems.
