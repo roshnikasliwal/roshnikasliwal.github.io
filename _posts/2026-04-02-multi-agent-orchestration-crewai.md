@@ -1,6 +1,7 @@
 ---
 title: "Multi-Agent Orchestration with CrewAI: A Real Use Case"
 date: 2026-04-02 09:00:00 +0530
+mermaid: true
 categories: [AI, Agentic AI]
 tags: [crewai, multi-agent, python, agile, automation, agentic-ai-series]
 ---
@@ -41,14 +42,14 @@ flowchart TD
 
 Each agent is scoped to a single responsibility:
 
-| Agent | Responsibility | Input | Output |
-|---|---|---|---|
-| **Backlog Analyst** | Rank stories by business value | Raw backlog | Prioritized list |
-| **Sprint Planner** | Select stories that fit capacity | Ranked backlog + velocity | Sprint scope |
-| **Story Enricher** | Add acceptance criteria | Selected stories | Complete stories |
-| **Estimator** | Assign story points | Enriched stories + history | Estimated stories |
-| **Risk Analyst** | Identify blockers and risks | Sprint scope + history | Risk report |
-| **Report Generator** | Produce final artifacts | All agent outputs | Sprint plan + briefing |
+| Agent                | Responsibility                   | Input                      | Output                 |
+| -------------------- | -------------------------------- | -------------------------- | ---------------------- |
+| **Backlog Analyst**  | Rank stories by business value   | Raw backlog                | Prioritized list       |
+| **Sprint Planner**   | Select stories that fit capacity | Ranked backlog + velocity  | Sprint scope           |
+| **Story Enricher**   | Add acceptance criteria          | Selected stories           | Complete stories       |
+| **Estimator**        | Assign story points              | Enriched stories + history | Estimated stories      |
+| **Risk Analyst**     | Identify blockers and risks      | Sprint scope + history     | Risk report            |
+| **Report Generator** | Produce final artifacts          | All agent outputs          | Sprint plan + briefing |
 
 ## CrewAI Implementation
 

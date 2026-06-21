@@ -1,6 +1,7 @@
 ---
 title: "Lessons from 10+ Hackathons: What Makes an Agentic AI Solution Win"
 date: 2026-04-08 09:00:00 +0530
+mermaid: true
 categories: [AI, Agentic AI]
 tags: [hackathon, agentic-ai, lessons, architecture, product-thinking, agentic-ai-series]
 ---

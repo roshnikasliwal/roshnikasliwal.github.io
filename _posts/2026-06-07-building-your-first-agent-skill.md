@@ -1,6 +1,7 @@
 ---
 title: "Building Your First Agent Skill: From Definition to Production"
 date: 2026-06-07 09:00:00 +0000
+mermaid: true
 categories: [AI Engineering, Tutorials]
 tags: [agents, skills, python, tutorial, tool-use]
 author: Roshni Kasliwal

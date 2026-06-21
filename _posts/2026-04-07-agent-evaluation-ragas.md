@@ -1,6 +1,7 @@
 ---
 title: "Agent Evaluation: How Do You Know Your Agent is Working?"
 date: 2026-04-07 09:00:00 +0530
+mermaid: true
 categories: [AI, Agentic AI]
 tags: [evaluation, ragas, llmops, testing, python, deepeval, agentic-ai-series]
 ---
@@ -235,13 +236,13 @@ print(scores.to_pandas()[["faithfulness", "answer_relevancy", "context_precision
 
 ### Understanding the Metrics
 
-| Metric | What it measures | Target |
-|---|---|---|
-| **Faithfulness** | Is the answer grounded in retrieved context? (no hallucination) | > 0.85 |
-| **Answer Relevancy** | Does the answer address the question? | > 0.80 |
-| **Context Precision** | Are retrieved chunks relevant to the question? | > 0.75 |
-| **Context Recall** | Were all necessary documents retrieved? | > 0.70 |
-| **Answer Correctness** | Is the answer factually correct vs. ground truth? | > 0.75 |
+| Metric                 | What it measures                                                | Target |
+| ---------------------- | --------------------------------------------------------------- | ------ |
+| **Faithfulness**       | Is the answer grounded in retrieved context? (no hallucination) | > 0.85 |
+| **Answer Relevancy**   | Does the answer address the question?                           | > 0.80 |
+| **Context Precision**  | Are retrieved chunks relevant to the question?                  | > 0.75 |
+| **Context Recall**     | Were all necessary documents retrieved?                         | > 0.70 |
+| **Answer Correctness** | Is the answer factually correct vs. ground truth?               | > 0.75 |
 
 Faithfulness is the most critical metric. A score below 0.7 means your agent is regularly making up information not present in the retrieved context — unacceptable for production.
 

@@ -1,6 +1,7 @@
 ---
 title: "What Are Agent Skills? A Practical Introduction"
 date: 2026-06-01 09:00:00 +0000
+mermaid: true
 categories: [AI Engineering, Agent Design]
 tags: [agents, skills, llm, tool-use]
 author: Roshni Kasliwal

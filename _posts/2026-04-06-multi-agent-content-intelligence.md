@@ -1,6 +1,7 @@
 ---
 title: "Designing a Multi-Agent System for Content Intelligence"
 date: 2026-04-06 09:00:00 +0530
+mermaid: true
 categories: [AI, Agentic AI]
 tags: [content-intelligence, metadata, agents, crewai, faiss, python, nlp, agentic-ai-series]
 ---
@@ -38,13 +39,13 @@ flowchart TD
     DB --> IDX[Search Index\nUpdated]
 ```
 
-| Agent | Responsibility |
-|---|---|
-| **Orchestrator** | Coordinates the pipeline, handles retries |
-| **Content Analyzer** | Extracts named entities, key topics, and themes |
-| **Classifier** | Assigns content type, category, and audience |
-| **Taxonomy Agent** | Maps extracted concepts to a controlled vocabulary |
-| **Validator** | Quality-checks metadata and rejects low-confidence outputs |
+| Agent                | Responsibility                                             |
+| -------------------- | ---------------------------------------------------------- |
+| **Orchestrator**     | Coordinates the pipeline, handles retries                  |
+| **Content Analyzer** | Extracts named entities, key topics, and themes            |
+| **Classifier**       | Assigns content type, category, and audience               |
+| **Taxonomy Agent**   | Maps extracted concepts to a controlled vocabulary         |
+| **Validator**        | Quality-checks metadata and rejects low-confidence outputs |
 
 ## Tool Design
 

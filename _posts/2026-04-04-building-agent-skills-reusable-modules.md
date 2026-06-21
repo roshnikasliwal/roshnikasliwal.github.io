@@ -1,6 +1,7 @@
 ---
 title: "Building Agent Skills as Reusable Modules"
 date: 2026-04-04 09:00:00 +0530
+mermaid: true
 categories: [AI, Agentic AI]
 tags: [agent-tools, python, langchain, crewai, architecture, reusability, agentic-ai-series]
 ---

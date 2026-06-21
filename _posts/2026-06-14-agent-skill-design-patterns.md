@@ -1,6 +1,7 @@
 ---
 title: "Agent Skill Design Patterns: What Works in Production"
 date: 2026-06-14 09:00:00 +0000
+mermaid: true
 categories: [AI Engineering, Architecture]
 tags: [agents, skills, design-patterns, architecture, production]
 author: Roshni Kasliwal
@@ -103,11 +104,11 @@ Notice the rate limit error includes `retry_after_seconds`. This gives the model
 
 Some operations naturally belong together. When I find myself building a "search" skill, I almost always end up needing a "get details" companion.
 
-| Search Skill | Detail Skill |
-|---|---|
-| `search_knowledge_base` | `get_article_by_id` |
-| `find_customer` | `get_customer_details` |
-| `list_open_tickets` | `get_ticket_thread` |
+| Search Skill            | Detail Skill           |
+| ----------------------- | ---------------------- |
+| `search_knowledge_base` | `get_article_by_id`    |
+| `find_customer`         | `get_customer_details` |
+| `list_open_tickets`     | `get_ticket_thread`    |
 
 The search skill returns brief, scannable results — enough for the model to identify what it needs. The detail skill fetches the full content for the item the model decided it wants.
 

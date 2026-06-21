@@ -1,6 +1,7 @@
 ---
 title: "Google ADK: Building Multi-Agent Systems with Gemini"
 date: 2026-04-05 09:00:00 +0530
+mermaid: true
 categories: [AI, Agentic AI]
 tags: [google-adk, gemini, vertex-ai, multi-agent, python, cloud-run, agentic-ai-series]
 ---
@@ -356,14 +357,14 @@ gcloud run deploy event-safety-agent \
 
 ## ADK vs LangChain Agents: Key Differences
 
-| | Google ADK | LangChain Agents |
-|---|---|---|
-| **Model** | Gemini-optimized | Model-agnostic |
-| **Cloud integration** | Native (Vertex, Firebase, BigQuery) | Via LangChain integrations |
-| **Sub-agents** | First-class concept | Via LangGraph multi-agent |
-| **Streaming** | Built-in async streaming | Via stream_events |
-| **Session management** | Built-in service | Custom implementation |
-| **Deployment** | Cloud Run native | Any |
+|                        | Google ADK                          | LangChain Agents           |
+| ---------------------- | ----------------------------------- | -------------------------- |
+| **Model**              | Gemini-optimized                    | Model-agnostic             |
+| **Cloud integration**  | Native (Vertex, Firebase, BigQuery) | Via LangChain integrations |
+| **Sub-agents**         | First-class concept                 | Via LangGraph multi-agent  |
+| **Streaming**          | Built-in async streaming            | Via stream_events          |
+| **Session management** | Built-in service                    | Custom implementation      |
+| **Deployment**         | Cloud Run native                    | Any                        |
 
 ## Key Takeaways
 

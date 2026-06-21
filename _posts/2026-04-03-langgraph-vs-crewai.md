@@ -1,6 +1,7 @@
 ---
 title: "LangGraph vs CrewAI: When to Use Which"
 date: 2026-04-03 09:00:00 +0530
+mermaid: true
 categories: [AI, Agentic AI]
 tags: [langgraph, crewai, python, comparison, multi-agent, agentic-ai-series]
 ---
@@ -233,18 +234,18 @@ CrewAI has no equivalent native checkpointing — if your 6-agent pipeline fails
 
 ## Head-to-Head Comparison
 
-| Feature | LangGraph | CrewAI |
-|---|---|---|
-| **Abstraction level** | Low (graph nodes) | High (roles + tasks) |
-| **Conditional branching** | Native (conditional edges) | Limited (needs custom logic) |
-| **Loops / retry** | Native | Workaround required |
-| **State management** | Explicit TypedDict | Implicit (task context) |
-| **Checkpointing** | Built-in | Not available |
-| **Parallelism** | Node-level | Process.parallel |
-| **Learning curve** | Steeper | Gentler |
-| **Debugging** | Full state visibility | Task-level visibility |
-| **Human-in-the-loop** | Native breakpoints | Limited |
-| **Best for** | Complex flows, production | Rapid prototyping, role-based |
+| Feature                   | LangGraph                  | CrewAI                        |
+| ------------------------- | -------------------------- | ----------------------------- |
+| **Abstraction level**     | Low (graph nodes)          | High (roles + tasks)          |
+| **Conditional branching** | Native (conditional edges) | Limited (needs custom logic)  |
+| **Loops / retry**         | Native                     | Workaround required           |
+| **State management**      | Explicit TypedDict         | Implicit (task context)       |
+| **Checkpointing**         | Built-in                   | Not available                 |
+| **Parallelism**           | Node-level                 | Process.parallel              |
+| **Learning curve**        | Steeper                    | Gentler                       |
+| **Debugging**             | Full state visibility      | Task-level visibility         |
+| **Human-in-the-loop**     | Native breakpoints         | Limited                       |
+| **Best for**              | Complex flows, production  | Rapid prototyping, role-based |
 
 ## Decision Framework
 
