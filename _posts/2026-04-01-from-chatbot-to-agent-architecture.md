@@ -1,6 +1,7 @@
 ---
 title: "From Chatbot to Agent: What Changes in Architecture"
 date: 2026-04-01 09:00:00 +0530
+mermaid: true
 categories: [AI, Agentic AI]
 tags: [agents, agentic-ai, langchain, python, architecture, react, agentic-ai-series]
 ---
