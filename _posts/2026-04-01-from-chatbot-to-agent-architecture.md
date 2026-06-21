@@ -4,6 +4,11 @@ date: 2026-04-01 09:00:00 +0530
 mermaid: true
 categories: [AI, Agentic AI]
 tags: [agents, agentic-ai, langchain, python, architecture, react, agentic-ai-series]
+description: "From Chatbot to Agent: What Changes in Architecture"
+image:
+  path: assets/posts/from-chatbot-to-agent-architecture/header.png
+  alt: "From Chatbot to Agent: What Changes in Architecture"
+  no_bg: true
 ---
 
 Most developers start building AI applications the same way: call an LLM with a prompt, get a response, display it. That works for Q&A, summarization, and content generation. But when you need an AI system that can use tools, remember context across steps, and make decisions autonomously — you need an agent architecture, not a chatbot.
@@ -133,15 +138,15 @@ flowchart LR
 
 ## Chatbot vs Agent: The Practical Differences
 
-| Dimension | Chatbot | Agent |
-|---|---|---|
-| **Execution model** | Single LLM call | Multi-step loop |
-| **State** | Stateless | Stateful trajectory |
-| **Actions** | Text only | Tools, APIs, code execution |
-| **Failure recovery** | None | Retry, replanning |
-| **Latency** | 1–3 seconds | 5–60+ seconds |
-| **Cost** | 1–2 LLM calls | N LLM calls |
-| **Best for** | Q&A, summarization | Research, automation, multi-step tasks |
+| Dimension            | Chatbot            | Agent                                  |
+| -------------------- | ------------------ | -------------------------------------- |
+| **Execution model**  | Single LLM call    | Multi-step loop                        |
+| **State**            | Stateless          | Stateful trajectory                    |
+| **Actions**          | Text only          | Tools, APIs, code execution            |
+| **Failure recovery** | None               | Retry, replanning                      |
+| **Latency**          | 1–3 seconds        | 5–60+ seconds                          |
+| **Cost**             | 1–2 LLM calls      | N LLM calls                            |
+| **Best for**         | Q&A, summarization | Research, automation, multi-step tasks |
 
 ## What Actually Changes in Your Codebase
 
