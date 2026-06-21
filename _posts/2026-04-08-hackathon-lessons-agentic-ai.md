@@ -4,6 +4,11 @@ date: 2026-04-08 09:00:00 +0530
 mermaid: true
 categories: [AI, Agentic AI]
 tags: [hackathon, agentic-ai, lessons, architecture, product-thinking, agentic-ai-series]
+description: "Lessons from building Agentic AI in hackathons - how the right tools, rapid iteration, and human-AI collaboration turn ideas into working systems."
+image:
+  path: assets/posts/hackathon-lessons-agentic-ai/header.png
+  alt: "Modern software engineer collaborating with a friendly AI Agent while reviewing an Agentic AI playbook. A box labeled “Agent Toolkit” contains development tools and integration icons, surrounded by sketches, notes, and workflow diagrams, representing lessons learned from building Agentic AI during hackathons."
+  no_bg: true
 ---
 
 Hackathons are compressed versions of everything that matters in AI engineering: tight constraints, imperfect information, real-time decision-making, and a live demo that has to actually work.
