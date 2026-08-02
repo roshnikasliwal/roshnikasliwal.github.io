@@ -1,6 +1,6 @@
 ---
 title: "Structured Outputs and Tool-Call Contracts: The Reliability Layer Agents Actually Need"
-date: 2026-08-30 09:00:00 +0000
+date: 2026-08-30
 mermaid: true
 categories: [AI Engineering, Agent Infrastructure]
 tags: [structured-outputs, function-calling, agents, reliability, agent-infra-series]

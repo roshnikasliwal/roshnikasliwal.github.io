@@ -1,6 +1,6 @@
 ---
 title: "Building Production-Grade Agent Memory: Tiers, Write Policies, and Retrieval"
-date: 2026-08-16 09:00:00 +0000
+date: 2026-08-16
 mermaid: true
 categories: [AI Engineering, Agent Infrastructure]
 tags: [agent-memory, agents, architecture, llmops, agent-infra-series]

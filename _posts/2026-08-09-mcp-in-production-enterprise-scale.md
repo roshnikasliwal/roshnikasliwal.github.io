@@ -1,6 +1,6 @@
 ---
 title: "MCP in Production: Wiring Agents to Tools and Data at Enterprise Scale"
-date: 2026-08-09 09:00:00 +0000
+date: 2026-08-09
 mermaid: true
 categories: [AI Engineering, Agent Infrastructure]
 tags: [mcp, agents, tool-use, architecture, agent-infra-series]

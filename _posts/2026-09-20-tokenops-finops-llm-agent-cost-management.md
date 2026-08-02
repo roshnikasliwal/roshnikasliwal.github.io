@@ -1,6 +1,6 @@
 ---
 title: "TokenOps: A FinOps Practice for LLM and Agent Cost Management"
-date: 2026-09-20 09:00:00 +0000
+date: 2026-09-20
 mermaid: true
 categories: [AI Engineering, Scaling AI Systems]
 tags: [finops, tokenops, cost-optimization, llmops, scaling-ai-series]

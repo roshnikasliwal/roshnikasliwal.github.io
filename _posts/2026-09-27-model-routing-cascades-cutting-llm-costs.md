@@ -1,6 +1,6 @@
 ---
 title: "Model Routing and Cascades: Cutting LLM Costs Without Losing Quality"
-date: 2026-09-27 09:00:00 +0000
+date: 2026-09-27
 mermaid: true
 categories: [AI Engineering, Scaling AI Systems]
 tags: [model-routing, cost-optimization, small-language-models, llmops, scaling-ai-series]

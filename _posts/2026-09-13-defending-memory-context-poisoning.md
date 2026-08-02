@@ -1,6 +1,6 @@
 ---
 title: "Defending Against Memory and Context Poisoning in Long-Running Agents"
-date: 2026-09-13 09:00:00 +0000
+date: 2026-09-13
 mermaid: true
 categories: [AI Engineering, Scaling AI Systems]
 tags: [security, agent-memory, agents, guardrails, scaling-ai-series]

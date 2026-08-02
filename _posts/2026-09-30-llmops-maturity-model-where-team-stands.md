@@ -1,6 +1,6 @@
 ---
 title: "The LLMOps Maturity Model: Where Your Team Actually Stands"
-date: 2026-09-30 09:00:00 +0000
+date: 2026-09-30
 mermaid: true
 categories: [AI Engineering, Scaling AI Systems]
 tags: [llmops, observability, maturity-model, platform, scaling-ai-series]
@@ -36,17 +36,17 @@ Very few organizations are honestly at Stage 5 today, and that's fine — the va
 
 Score your own systems honestly against each of these — the gap between where you *think* you are and where a specific checklist item says you are is usually where the actual risk lives:
 
-| Capability                                      | Stage 2 | Stage 3 | Stage 4 |
-| -------------------------------------------------- | :-------: | :-------: | :-------: |
-| Latency/error dashboards exist                     | ✅      | ✅      | ✅      |
-| Full agent trajectory tracing (not just req/resp)  | ❌      | ✅      | ✅      |
-| Automated eval suite gates CI                       | ❌      | ✅      | ✅      |
-| Cost attributed per feature/team                    | ❌      | Partial | ✅      |
-| Model routing implemented and quality-verified       | ❌      | Partial | ✅      |
-| Guardrails tested against an adversarial test set     | ❌      | ✅      | ✅      |
-| Memory writes tracked with provenance                | ❌      | Partial | ✅      |
-| Cost circuit breakers, not just alerts               | ❌      | ❌      | ✅      |
-| Continuous fine-tuning from production feedback       | ❌      | ❌      | ✅      |
+| Capability                                        | Stage 2 | Stage 3 | Stage 4 |
+| ------------------------------------------------- | :-----: | :-----: | :-----: |
+| Latency/error dashboards exist                    |    ✅    |    ✅    |    ✅    |
+| Full agent trajectory tracing (not just req/resp) |    ❌    |    ✅    |    ✅    |
+| Automated eval suite gates CI                     |    ❌    |    ✅    |    ✅    |
+| Cost attributed per feature/team                  |    ❌    | Partial |    ✅    |
+| Model routing implemented and quality-verified    |    ❌    | Partial |    ✅    |
+| Guardrails tested against an adversarial test set |    ❌    |    ✅    |    ✅    |
+| Memory writes tracked with provenance             |    ❌    | Partial |    ✅    |
+| Cost circuit breakers, not just alerts            |    ❌    |    ❌    |    ✅    |
+| Continuous fine-tuning from production feedback   |    ❌    |    ❌    |    ✅    |
 
 The most common honest result: a team scores solidly at Stage 3 on the practices that got attention recently (whatever the last incident forced them to fix) and Stage 1 on everything else. Maturity isn't uniform by default — it's uniform only when someone deliberately makes it so.
 

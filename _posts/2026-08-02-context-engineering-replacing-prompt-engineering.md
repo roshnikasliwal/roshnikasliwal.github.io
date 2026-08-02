@@ -1,6 +1,6 @@
 ---
 title: "Context Engineering: The Discipline That's Replacing Prompt Engineering"
-date: 2026-08-02 09:00:00 +0000
+date: 2026-08-02
 mermaid: true
 categories: [AI Engineering, Agent Infrastructure]
 tags: [context-engineering, agents, llmops, architecture, agent-infra-series]

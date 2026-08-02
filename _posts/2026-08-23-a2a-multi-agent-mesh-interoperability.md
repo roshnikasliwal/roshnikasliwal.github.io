@@ -1,6 +1,6 @@
 ---
 title: "A2A and the Multi-Agent Mesh: Interoperability Beyond a Single Framework"
-date: 2026-08-23 09:00:00 +0000
+date: 2026-08-23
 mermaid: true
 categories: [AI Engineering, Agent Infrastructure]
 tags: [a2a, agents, interoperability, architecture, agent-infra-series]
@@ -88,13 +88,13 @@ A2A crossed 150 supporting organizations on the Linux Foundation roster in its f
 
 ## A2A vs. MCP: When You Need Which
 
-| Dimension                | MCP                                        | A2A                                              |
-| ---------------------------| ---------------------------------------------| ----------------------------------------------------|
-| **Relationship**            | Agent → tool/data (client-server)            | Agent ↔ agent (peer-to-peer)                        |
-| **What's on the other end** | A function or a data source, not a reasoner  | Another reasoning agent, potentially long-running    |
-| **Discovery mechanism**     | Server capability listing                    | Agent Card                                          |
-| **Task model**              | Single call, request/response                | Task delegation, can be long-running and stateful    |
-| **Typical use**             | Wiring an agent to your internal systems     | Cross-team, cross-vendor, or cross-organization agent collaboration |
+| Dimension                   | MCP                                         | A2A                                                                 |
+| --------------------------- | ------------------------------------------- | ------------------------------------------------------------------- |
+| **Relationship**            | Agent → tool/data (client-server)           | Agent ↔ agent (peer-to-peer)                                        |
+| **What's on the other end** | A function or a data source, not a reasoner | Another reasoning agent, potentially long-running                   |
+| **Discovery mechanism**     | Server capability listing                   | Agent Card                                                          |
+| **Task model**              | Single call, request/response               | Task delegation, can be long-running and stateful                   |
+| **Typical use**             | Wiring an agent to your internal systems    | Cross-team, cross-vendor, or cross-organization agent collaboration |
 
 Most production systems need both, at different layers of the same architecture — your agent uses MCP to reach its own tools and data, and A2A when the thing it needs to delegate to is itself an autonomous agent rather than a deterministic function.
 

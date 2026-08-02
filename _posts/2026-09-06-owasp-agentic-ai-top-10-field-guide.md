@@ -1,6 +1,6 @@
 ---
 title: "The OWASP Agentic AI Top 10: A Field Guide to Threats Beyond Prompt Injection"
-date: 2026-09-06 09:00:00 +0000
+date: 2026-09-06
 mermaid: true
 categories: [AI Engineering, Scaling AI Systems]
 tags: [security, owasp, agents, guardrails, scaling-ai-series]
