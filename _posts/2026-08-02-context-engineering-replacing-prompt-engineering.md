@@ -26,7 +26,7 @@ flowchart TD
 
 - **System prompt**: instructions, tool descriptions, constraints — usually static, but grows every time someone adds "oh, and also handle this edge case"
 - **Conversation history**: everything said so far in this session — grows linearly and eventually needs trimming or summarizing
-- **Retrieved memory**: facts pulled from a persistent store about this user or past sessions (the subject of the [next post in this series](/posts/building-production-grade-agent-memory/))
+- **Retrieved memory**: facts pulled from a persistent store about this user or past sessions (the subject of the next post in this series)
 - **RAG-retrieved documents**: whatever a retrieval step pulled in for this specific query
 - **Tool call results**: raw API responses, database query results, file contents
 - **Scratchpad**: the agent's own intermediate reasoning from earlier steps in a multi-step trajectory
@@ -119,12 +119,12 @@ The instinct when an agent gives a wrong answer is often to retrieve *more* — 
 
 ## A Context Engineering Checklist
 
-| Practice                                | What It Prevents                                    |
-| ------------------------------------------ | -------------------------------------------------------- |
-| Explicit per-source token budget            | One verbose source silently crowding out everything else |
-| Proactive compaction at a threshold          | Reactive, lossy summarization under a hard limit          |
-| Shaped tool outputs, not raw API responses   | Context burned on fields the agent never reasons about   |
-| Reranking retrieval down to high-precision top-k | Context rot from low-relevance documents diluting the signal |
+| Practice                                                | What It Prevents                                                 |
+| ------------------------------------------------------- | ---------------------------------------------------------------- |
+| Explicit per-source token budget                        | One verbose source silently crowding out everything else         |
+| Proactive compaction at a threshold                     | Reactive, lossy summarization under a hard limit                 |
+| Shaped tool outputs, not raw API responses              | Context burned on fields the agent never reasons about           |
+| Reranking retrieval down to high-precision top-k        | Context rot from low-relevance documents diluting the signal     |
 | Placing critical instructions near the most recent turn | Instructions from early in a long session getting under-weighted |
 
 ## Key Takeaways

@@ -106,7 +106,7 @@ def get_mcp_servers_for_agent(agent_name: str) -> list[str]:
 4. **Log at a central gateway**, not per-server, if you're running more than a couple of MCP servers
 5. **Tool descriptions are a spec** — the same clarity discipline that applies to any agent skill applies here
 
-MCP solves how an agent talks to tools and data. It has nothing to say about how one agent talks to *another* agent — that's a different protocol, covered in [the next post in this series](/posts/a2a-multi-agent-mesh-interoperability/). Before that, though, there's the question of what an agent remembers between MCP calls and sessions entirely — [production-grade agent memory](/posts/building-production-grade-agent-memory/).
+MCP solves how an agent talks to tools and data. It has nothing to say about how one agent talks to *another* agent — that's a different protocol, covered in the next post in this series. Before that, though, there's the question of what an agent remembers between MCP calls and sessions entirely — production-grade agent memory.
 
 ---
 

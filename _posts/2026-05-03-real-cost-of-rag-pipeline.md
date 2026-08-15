@@ -44,7 +44,7 @@ The highest-leverage cost optimization is usually not "use a cheaper model" — 
 
 - **Cache aggressively** (with the fingerprinting approach from earlier in this series) to skip repeated retrieval and generation entirely
 - **Skip reranking conditionally** when the top retrieval result already has high confidence
-- **Route simple queries to a cheaper/smaller model**, reserving the expensive model for genuinely complex questions — the same principle covered later in this blog's [model routing and cascades post](/posts/model-routing-cascades-cutting-llm-costs/)
+- **Route simple queries to a cheaper/smaller model**, reserving the expensive model for genuinely complex questions — the same principle covered later in this blog's model routing and cascades discussion
 
 ## Key Takeaways
 
