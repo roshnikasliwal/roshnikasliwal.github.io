@@ -148,8 +148,8 @@ def analyze_content(content: str, title: str, max_topics: int = 10) -> str:
     Title: {title}
     Content: {content[:3000]}
     
-    Return JSON: {{"entities": {{"people": [], "organizations": [], "technologies": [], "products": []}}, 
-                   "topics": [], "themes": []}}
+    Return JSON: {% raw %}{{"entities": {{"people": [], "organizations": [], "technologies": [], "products": []}}, 
+                   "topics": [], "themes": []}}{% endraw %}
     """)
     
     try:

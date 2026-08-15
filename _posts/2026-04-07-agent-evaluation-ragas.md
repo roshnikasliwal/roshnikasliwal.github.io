@@ -281,7 +281,7 @@ Scoring rubric:
 2 = Poor: mostly fails criteria, significant issues
 1 = Unacceptable: fails criteria entirely
 
-Respond with a JSON object: {{"score": int, "reasoning": "...", "verdict": "pass|fail", "improvements": ["..."]}}
+Respond with a JSON object: {% raw %}{{"score": int, "reasoning": "...", "verdict": "pass|fail", "improvements": ["..."]}}{% endraw %}
 Verdict is "pass" for score >= 3.
 """
     response = judge_llm.with_structured_output(EvalResult).invoke(prompt)
