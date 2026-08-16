@@ -8,7 +8,7 @@ author: Roshni Kasliwal
 description: Context, memory, and protocols only matter if the calls flowing across them are reliable. Closing this series with the contract layer — schema validation, retry-on-malformed, and testing the boundary between agents and tools like any other API.
 ---
 
-This series has covered how an agent gets context ([context engineering](/posts/context-engineering-replacing-prompt-engineering/)), how it reaches tools and data ([MCP](/posts/mcp-in-production-enterprise-scale/)), how it remembers things ([agent memory](/posts/building-production-grade-agent-memory/)), and how it collaborates with other agents ([A2A](/posts/a2a-multi-agent-mesh-interoperability/)). Every one of those depends on a more basic assumption: that the calls flowing across those channels actually conform to the shape the receiving side expects. This closing post is about the layer that makes that assumption hold — structured outputs and tool-call contracts.
+This series has covered how an agent gets context ([context engineering](/posts/context-engineering-replacing-prompt-engineering/)), how it reaches tools and data ([MCP](/posts/mcp-in-production-enterprise-scale/)), how it remembers things ([agent memory](/posts/building-production-grade-agent-memory/)), and how it collaborates with other agents (A2A). Every one of those depends on a more basic assumption: that the calls flowing across those channels actually conform to the shape the receiving side expects. This closing post is about the layer that makes that assumption hold — structured outputs and tool-call contracts.
 
 ## Why This Is Its Own Problem
 
@@ -137,7 +137,7 @@ def get_validated_resolution(raw_output: str, llm, max_retries: int = 2) -> Tick
 4. **Watch for drift between server-declared and agent-validated schemas** in MCP-based systems specifically — nothing keeps them in sync automatically
 5. **Apply the same validation discipline to final agent outputs** that feed downstream systems, not just to intermediate tool calls
 
-That closes the infrastructure arc — context, protocols to tools, memory, protocols to other agents, and the contracts that keep all of it reliable. The next series turns to what it takes to run this infrastructure responsibly at organizational scale: security, cost, and platform maturity, starting with [the OWASP Agentic AI Top 10](/posts/owasp-agentic-ai-top-10-field-guide/).
+That closes the infrastructure arc — context, protocols to tools, memory, protocols to other agents, and the contracts that keep all of it reliable. The next series turns to what it takes to run this infrastructure responsibly at organizational scale: security, cost, and platform maturity, starting with the OWASP Agentic AI Top 10.
 
 ---
 

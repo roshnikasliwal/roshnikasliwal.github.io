@@ -8,7 +8,7 @@ author: Roshni Kasliwal
 description: A false fact planted in an agent's long-term memory doesn't go away when you correct it in conversation — it's still sitting in the store, waiting to influence the next session. Here's how to actually defend against it.
 ---
 
-The [OWASP Agentic AI Top 10 post](/posts/owasp-agentic-ai-top-10-field-guide/) flagged memory and context poisoning as one of the risk categories specific to agentic systems, and it's worth a full post because the failure mode is genuinely counterintuitive: a recent security study found over 90% of tested agents vulnerable to having false information planted in persistent memory — and, more troubling, a **100% relapse rate** when teams tried to fix it by correcting the agent in conversation. This post covers why that correction doesn't work, and what actually does.
+The OWASP Agentic AI Top 10 post flagged memory and context poisoning as one of the risk categories specific to agentic systems, and it's worth a full post because the failure mode is genuinely counterintuitive: a recent security study found over 90% of tested agents vulnerable to having false information planted in persistent memory — and, more troubling, a **100% relapse rate** when teams tried to fix it by correcting the agent in conversation. This post covers why that correction doesn't work, and what actually does.
 
 ## Why "Just Correct It" Doesn't Work
 
@@ -26,7 +26,7 @@ flowchart LR
 
 ## Where Poisoning Actually Enters
 
-Poisoning doesn't require compromising your infrastructure — it typically rides in through the same channels the [OWASP field guide](/posts/owasp-agentic-ai-top-10-field-guide/) covered for goal hijacking and tool misuse:
+Poisoning doesn't require compromising your infrastructure — it typically rides in through the same channels the OWASP field guide covered for goal hijacking and tool misuse:
 
 - **Indirect injection via retrieved content** — a document, ticket, or web page the agent reads during a session contains a crafted instruction disguised as data, aimed specifically at getting written to memory rather than just influencing the current response
 - **Adversarial user input over multiple turns** — a user deliberately steers a conversation toward statements designed to look like a legitimate durable fact to whatever write-policy evaluation is watching

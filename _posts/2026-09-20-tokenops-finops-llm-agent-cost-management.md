@@ -8,7 +8,7 @@ author: Roshni Kasliwal
 description: The organizations managing AI costs well treat it as a dedicated discipline with real ownership, not a line item someone notices when the invoice arrives. Here's what that discipline — TokenOps — actually looks like.
 ---
 
-Security is the first thing that breaks when agentic systems scale past a prototype. Cost is the second — and it breaks quietly, because a runaway agent loop or an unbudgeted context window doesn't throw an error, it just shows up as a number on next month's invoice that's much bigger than anyone expected. **TokenOps** is the name the industry has settled on for applying FinOps discipline — visibility, allocation, optimization — specifically to LLM and agent token consumption, and it's the natural next topic after [security](/posts/defending-memory-context-poisoning/) in this series on scaling AI engineering.
+Security is the first thing that breaks when agentic systems scale past a prototype. Cost is the second — and it breaks quietly, because a runaway agent loop or an unbudgeted context window doesn't throw an error, it just shows up as a number on next month's invoice that's much bigger than anyone expected. **TokenOps** is the name the industry has settled on for applying FinOps discipline — visibility, allocation, optimization — specifically to LLM and agent token consumption, and it's the natural next topic after security in this series on scaling AI engineering.
 
 ## The Five Layers of Token Spend
 
@@ -27,7 +27,7 @@ flowchart TD
 - **Context and memory included** — the [context engineering post](/posts/context-engineering-replacing-prompt-engineering/) from the infrastructure series covers this directly; every unbudgeted token here is a recurring cost, not a one-time one
 - **Model selection** — the gap between the cheapest usable model and the most capable one runs into the hundreds of times, not a small multiplier
 - **Output length** — verbose responses cost more per call and compound across every retry
-- **Retry overhead** — a validation failure that triggers a retry (from the [structured outputs post](/posts/structured-outputs-tool-call-contracts/)) doubles the cost of that call, and a system with a high retry rate is paying that tax on a meaningful fraction of all its calls
+- **Retry overhead** — a validation failure that triggers a retry (from the structured outputs post) doubles the cost of that call, and a system with a high retry rate is paying that tax on a meaningful fraction of all its calls
 
 Optimizing model selection alone while ignoring the other four layers is a common mistake — a cheaper model with a bloated, unbudgeted context and a high retry rate can easily cost more per resolved task than a pricier model used carefully.
 
@@ -100,7 +100,7 @@ def track_retry_overhead(feature: str):
         flag_for_review(feature, reason=f"retry rate {retry_rate:.0%} — check schema validation and prompt clarity")
 ```
 
-A retry rate above roughly 15% is usually a signal that a tool schema is ambiguous or a prompt is under-specifying the expected format — the fix is in the [structured outputs contract](/posts/structured-outputs-tool-call-contracts/), and it's cheaper than paying the retry tax indefinitely.
+A retry rate above roughly 15% is usually a signal that a tool schema is ambiguous or a prompt is under-specifying the expected format — the fix is in the structured outputs contract, and it's cheaper than paying the retry tax indefinitely.
 
 ## Ownership Is the Part Most Teams Skip
 
@@ -114,7 +114,7 @@ The organizations getting real results here have a specific person or team who o
 4. **Watch retry rate as its own metric** — a rate above ~15% usually points at an ambiguous tool schema, not an unavoidable cost
 5. **Cost needs an owner**, the same way infrastructure cost has one — visibility tooling without accountability becomes decoration
 
-The next post covers the highest-leverage lever for actually reducing that spend without sacrificing quality — [model routing and cascades](/posts/model-routing-cascades-cutting-llm-costs/).
+The next post covers the highest-leverage lever for actually reducing that spend without sacrificing quality — model routing and cascades.
 
 ---
 

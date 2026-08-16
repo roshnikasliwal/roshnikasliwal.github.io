@@ -54,7 +54,7 @@ flowchart LR
 
 ## Revisit the Decision as the Vendor Landscape Matures
 
-A "build" decision made a year ago, when vendor options for a given capability were immature, may no longer be the right call as that vendor landscape matures — the earlier post on [evaluating cheaper models](/posts/evaluating-cheaper-models-without-losing-quality/) argued for periodic re-evaluation as the model landscape shifts; the same discipline applies to buy-vs-build decisions for tooling, which shouldn't be treated as permanent just because they were reasonable at the time they were made.
+A "build" decision made a year ago, when vendor options for a given capability were immature, may no longer be the right call as that vendor landscape matures — the earlier post on evaluating cheaper models argued for periodic re-evaluation as the model landscape shifts; the same discipline applies to buy-vs-build decisions for tooling, which shouldn't be treated as permanent just because they were reasonable at the time they were made.
 
 ## Key Takeaways
 

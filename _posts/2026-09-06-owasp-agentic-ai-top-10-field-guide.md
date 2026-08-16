@@ -44,7 +44,7 @@ Running this check as an independent, periodic audit — not as part of the agen
 
 ## Tool Misuse and Exploitation
 
-This is where an agent's own tool access becomes the attack surface. A tool that's safe when called with expected arguments in an expected sequence can be misused when an agent — manipulated or simply reasoning its way into an edge case — calls it with arguments or in a sequence nobody designed for. The [structured outputs and tool-call contracts post](/posts/structured-outputs-tool-call-contracts/) covers the reliability side of this; the security side is the same validation logic applied with an adversarial mindset:
+This is where an agent's own tool access becomes the attack surface. A tool that's safe when called with expected arguments in an expected sequence can be misused when an agent — manipulated or simply reasoning its way into an edge case — calls it with arguments or in a sequence nobody designed for. The structured outputs and tool-call contracts post covers the reliability side of this; the security side is the same validation logic applied with an adversarial mindset:
 
 ```python
 def validate_tool_call_sequence(call_history: list[dict], new_call: dict, policy: dict) -> str | None:
@@ -66,11 +66,11 @@ A single `delete_record` call might be entirely legitimate; twelve `delete_recor
 
 ## Memory and Context Poisoning
 
-This one gets its own full post [next in this series](/posts/defending-memory-context-poisoning/), because it deserves it — a recent security study found over 90% of tested agents vulnerable to having false information planted in persistent memory, with a 100% relapse rate when teams tried to fix it through conversation rather than at the memory layer. The [production agent memory post](/posts/building-production-grade-agent-memory/) covered the architecture; the security implications of that architecture are substantial enough to warrant their own deep dive.
+This one gets its own full post next in this series, because it deserves it — a recent security study found over 90% of tested agents vulnerable to having false information planted in persistent memory, with a 100% relapse rate when teams tried to fix it through conversation rather than at the memory layer. The production agent memory post covered the architecture; the security implications of that architecture are substantial enough to warrant their own deep dive.
 
 ## Cross-Agent Trust Exploitation
 
-Once agents delegate work to other agents — the [A2A pattern](/posts/a2a-multi-agent-mesh-interoperability/) from the infrastructure series — a new trust boundary opens up. An agent receiving a task from another agent has historically had less scrutiny applied to that input than input coming directly from a human user, on the assumption that another agent is a "trusted" caller. That assumption is exactly the exploit: a compromised or manipulated upstream agent's output flows into a downstream agent's context with less validation than user input would get, and the downstream agent has no way to distinguish a legitimate delegation from a poisoned one without explicit provenance tracking.
+Once agents delegate work to other agents — the A2A pattern from the infrastructure series — a new trust boundary opens up. An agent receiving a task from another agent has historically had less scrutiny applied to that input than input coming directly from a human user, on the assumption that another agent is a "trusted" caller. That assumption is exactly the exploit: a compromised or manipulated upstream agent's output flows into a downstream agent's context with less validation than user input would get, and the downstream agent has no way to distinguish a legitimate delegation from a poisoned one without explicit provenance tracking.
 
 ```python
 def validate_inbound_agent_task(task: dict, trusted_agent_registry: dict) -> str | None:
@@ -100,7 +100,7 @@ What makes agentic risks compound in a way LLM-only risks don't is that they cha
 4. **Never implicitly trust inbound A2A tasks** — apply the same input guardrails to another agent's delegation that you'd apply to user input
 5. **These risks compound** — a layered defense across goal tracking, tool validation, memory integrity, and cross-agent trust outperforms any single-point check
 
-Memory poisoning is significant enough to warrant its own full treatment — [next up](/posts/defending-memory-context-poisoning/).
+Memory poisoning is significant enough to warrant its own full treatment — next up in this series.
 
 ---
 

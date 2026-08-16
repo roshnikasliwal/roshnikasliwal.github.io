@@ -12,7 +12,7 @@ A quieter post for a quiet week: a roundup of the questions that came up most pe
 
 ## "How do you actually decide narrow-vertical-agent versus general-purpose assistant?"
 
-The single most recurring question, spanning from April's architecture posts through October's Agent Economy series. The short answer: start with a bounded, measurable business process (procurement, ticket triage — October's specific examples), prove it, expand deliberately. The long answer is the [business case post from October](/posts/business-case-vertical-agent-not-platform/) and everything in that series' first week.
+The single most recurring question, spanning from April's architecture posts through October's Agent Economy series. The short answer: start with a bounded, measurable business process (procurement, ticket triage — October's specific examples), prove it, expand deliberately. The long answer is the business case post from October and everything in that series' first week.
 
 ## "Is spec-driven development overkill for a small team?"
 
@@ -24,11 +24,11 @@ From this year's guardrails series: there isn't one, and that's the actual answe
 
 ## "Does this apply to us if we're not EU-based?"
 
-The most common question after November's EU AI Act coverage. Per the [U.S. state law convergence post](/posts/us-state-law-eu-ai-act-convergence-agentic-systems/): the substantive architecture (risk-tiered oversight, data minimization, audit trails) transfers regardless of jurisdiction, even though specific documentation and enforcement differ. Build the substance; adapt the paperwork per jurisdiction.
+The most common question after November's EU AI Act coverage. Per the U.S. state law convergence post: the substantive architecture (risk-tiered oversight, data minimization, audit trails) transfers regardless of jurisdiction, even though specific documentation and enforcement differ. Build the substance; adapt the paperwork per jurisdiction.
 
 ## "Small model or frontier model for [specific task]?"
 
-Recurring throughout the year, most directly addressed this month. The [2.6B-vs-671B post](/posts/2-6b-model-beating-671b-model-domain-specific-tasks/) and the [sizing framework](/posts/1-3b-sweet-spot-sizing-small-language-model-edge-agent/) that followed it: narrow and well-defined favors small; broad, novel, or genuinely open-ended favors frontier. Measure on your own eval set rather than trusting either intuition.
+Recurring throughout the year, most directly addressed this month. The 2.6B-vs-671B post and the sizing framework that followed it: narrow and well-defined favors small; broad, novel, or genuinely open-ended favors frontier. Measure on your own eval set rather than trusting either intuition.
 
 ## What These Questions Have in Common
 

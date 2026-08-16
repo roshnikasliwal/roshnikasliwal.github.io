@@ -110,7 +110,7 @@ The same maturity gap noted in the MCP post shows up here too, and for similar r
 4. **Cross-vendor and cross-team boundaries are where A2A earns its keep** — it's the integration layer when the other side is an autonomous agent, not a deterministic tool
 5. **Trust and validation still apply to what comes back** — treat another agent's A2A response with the same input-validation discipline as any external system's output
 
-Both protocols in this series so far assume the calls that go back and forth actually work reliably. The next post covers what makes that assumption hold — [structured outputs and tool-call contracts](/posts/structured-outputs-tool-call-contracts/).
+Both protocols in this series so far assume the calls that go back and forth actually work reliably. The next post in this series covers what makes that assumption hold — structured outputs and tool-call contracts.
 
 ---
 

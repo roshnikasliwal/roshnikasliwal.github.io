@@ -55,7 +55,7 @@ def compare_distilled_vs_frontier(eval_set: list[dict], distilled_model, frontie
     }
 ```
 
-This connects directly to the [evaluating cheaper models](/posts/evaluating-cheaper-models-without-losing-quality/) post — the distilled model needs to clear the same eval bar the frontier model would, on the *actual production task distribution*, not just on the training examples it was distilled from, which would be evaluating the model on data it's already seen and tell you very little about real-world performance.
+This connects directly to the evaluating cheaper models post — the distilled model needs to clear the same eval bar the frontier model would, on the *actual production task distribution*, not just on the training examples it was distilled from, which would be evaluating the model on data it's already seen and tell you very little about real-world performance.
 
 ## Distillation Needs Ongoing Maintenance, Not a One-Time Project
 

@@ -113,7 +113,7 @@ def consolidate_episodic_to_semantic(user_id: str, llm):
 
 Memory that persists across sessions creates an attack surface that ephemeral context doesn't have. A recent security study found over 90% of tested agents vulnerable to memory poisoning — an adversarial input designed to plant a false "fact" into long-term memory that then influences every future session — and, more concerning, a 100% relapse rate when teams tried to fix it by correcting the agent conversationally rather than at the memory layer itself. Correcting an agent mid-conversation doesn't remove the poisoned entry from the store; it just papers over it for one session while the bad write persists underneath.
 
-This deserves its own full treatment, which is exactly what [the September series on scaling AI engineering](/posts/defending-memory-context-poisoning/) covers — but the design implication for the memory system itself is clear even at this stage: every write needs provenance (who/what triggered this write, from which source), and semantic memory writes in particular should require a higher evidence bar than a single ambiguous exchange, precisely because they're the tier that gets loaded in full on every future session.
+This deserves its own full treatment in the security series to come — but the design implication for the memory system itself is clear even at this stage: every write needs provenance (who/what triggered this write, from which source), and semantic memory writes in particular should require a higher evidence bar than a single ambiguous exchange, precisely because they're the tier that gets loaded in full on every future session.
 
 ## Key Takeaways
 
@@ -123,7 +123,7 @@ This deserves its own full treatment, which is exactly what [the September serie
 4. **Consolidate episodic into semantic periodically** — durable facts should graduate out of the high-volume tier, not stay buried in it
 5. **Persistent memory is a security surface, not just a feature** — every write needs provenance, and semantic writes need a higher evidence bar than a single exchange
 
-Memory and MCP both get an agent access to information from outside the current turn. The next post covers what happens when the "outside" isn't a tool or a data source, but another agent entirely — [A2A and the multi-agent mesh](/posts/a2a-multi-agent-mesh-interoperability/).
+Memory and MCP both get an agent access to information from outside the current turn. The next post in this infrastructure series covers what happens when the "outside" isn't a tool or a data source, but another agent entirely — A2A and the multi-agent mesh.
 
 ---
 

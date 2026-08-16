@@ -8,7 +8,7 @@ author: Roshni Kasliwal
 description: A five-stage self-assessment for AI engineering teams, closing out two series on infrastructure, security, and cost — because the honest answer to "are we production-ready" is usually more specific than yes or no.
 ---
 
-This series has covered [agentic security](/posts/owasp-agentic-ai-top-10-field-guide/), [memory poisoning defense](/posts/defending-memory-context-poisoning/), [cost visibility](/posts/tokenops-finops-llm-agent-cost-management/), and [model routing](/posts/model-routing-cascades-cutting-llm-costs/) — on top of the [infrastructure series](/tags/agent-infra-series/) before it on context, protocols, and memory. The natural question a lead engineer actually needs answered isn't "did we cover topic X," it's **where does our team actually stand**, across all of it. That's what a maturity model is for, and it's the right note to close both series on.
+This series has covered agentic security, memory poisoning defense, cost visibility, and model routing — on top of the infrastructure series before it on context, protocols, and memory. The natural question a lead engineer actually needs answered isn't "did we cover topic X," it's **where does our team actually stand**, across all of it. That's what a maturity model is for, and it's the right note to close both series on.
 
 ## The Five Stages
 
@@ -24,9 +24,9 @@ flowchart LR
 
 **Stage 2 — Monitored.** Basic log aggregation exists — latency and error-rate dashboards are up, but evaluation is still ad hoc and cost is tracked in aggregate at best, not attributed per feature.
 
-**Stage 3 — Production-Grade.** Automated evaluation pipelines run in CI, embedding-based drift detection catches quality regressions before users report them, guardrails from the [OWASP field guide](/posts/owasp-agentic-ai-top-10-field-guide/) are implemented and tested, and agentic observability — full trajectory tracing, not just request/response logging — is standard.
+**Stage 3 — Production-Grade.** Automated evaluation pipelines run in CI, embedding-based drift detection catches quality regressions before users report them, guardrails from the OWASP field guide are implemented and tested, and agentic observability — full trajectory tracing, not just request/response logging — is standard.
 
-**Stage 4 — Enterprise Scale.** Automated fine-tuning or continuous improvement pipelines feed back from production data, cost optimization (routing, caching, the practices from [the model routing post](/posts/model-routing-cascades-cutting-llm-costs/)) runs across the organization rather than per-team, and A/B testing frameworks let teams validate changes against real traffic before full rollout.
+**Stage 4 — Enterprise Scale.** Automated fine-tuning or continuous improvement pipelines feed back from production data, cost optimization (routing, caching, and the practices from the model routing post) runs across the organization rather than per-team, and A/B testing frameworks let teams validate changes against real traffic before full rollout.
 
 **Stage 5 — AI-Native Operations.** LLMOps is fully integrated into the software development lifecycle — self-healing systems and continuous evaluation drive automatic updates, and the distinction between "the AI system" and "the software system" has mostly dissolved.
 

@@ -41,7 +41,7 @@ class OrchestrationLayer:
 
 ## The Risk: Orchestration Becomes the New Single Point of Failure
 
-Centralizing routing, context, and policy into one layer concentrates real operational risk there too — exactly the tradeoff already worked through for the [agent gateway pattern](/posts/building-agent-gateway-shared-tool-servers/) earlier on this blog. A poorly-scaled orchestration layer bounds the reliability of every vertical agent behind it, regardless of how well each individual agent performs on its own.
+Centralizing routing, context, and policy into one layer concentrates real operational risk there too — exactly the tradeoff already worked through for the agent gateway pattern earlier on this blog. A poorly-scaled orchestration layer bounds the reliability of every vertical agent behind it, regardless of how well each individual agent performs on its own.
 
 ```mermaid
 flowchart LR

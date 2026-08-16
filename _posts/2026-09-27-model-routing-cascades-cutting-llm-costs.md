@@ -8,7 +8,7 @@ author: Roshni Kasliwal
 description: The gap between a frontier model and a small one runs into the hundreds of times on cost. Model routing — sending each request to the cheapest model that can actually handle it — is how production teams are closing that gap without a visible quality hit.
 ---
 
-The [TokenOps post](/posts/tokenops-finops-llm-agent-cost-management/) covered visibility and attribution — knowing where the money goes. This post covers the single highest-leverage lever for actually reducing it: **model routing**, the practice of dynamically choosing which model handles a given request based on how complex that request actually is, rather than sending everything to the same model by default.
+The TokenOps post covered visibility and attribution — knowing where the money goes. This post covers the single highest-leverage lever for actually reducing it: **model routing**, the practice of dynamically choosing which model handles a given request based on how complex that request actually is, rather than sending everything to the same model by default.
 
 ## The Economics That Make This Worth Doing
 
@@ -135,7 +135,7 @@ def evaluate_routing_quality_delta(golden_set: list[dict], routed_system, fronti
 4. **Assign small models per agent step for narrow, well-defined work**, distinct from routing per request — most systems benefit from combining both
 5. **Measure the quality delta against a frontier-only baseline before shipping** — the goal is cost reduction with no visible quality loss, and that has to be verified, not assumed
 
-The final post in this series steps back from any single technique to ask the broader question a lead engineer actually needs answered — [where does your team's AI engineering practice actually stand](/posts/llmops-maturity-model-where-team-stands/)?
+The final post in this series steps back from any single technique to ask the broader question a lead engineer actually needs answered — where does your team's AI engineering practice actually stand?
 
 ---
 
